@@ -64,6 +64,7 @@ public class UserController {
 		String password = request.getParameter("password");
 		User user = userRepo.findByUserNameAndPassword(userName, password);
 		System.out.println(user);
+		System.out.println(user);
 		if (user == null) {
 			mv.addObject("msg", "Please check user name and password");
 			mv.setViewName("home");
